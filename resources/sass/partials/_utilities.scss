@@ -1,0 +1,39 @@
+//LAYOUT
+.container {
+    max-width: 100vw;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0 20px;
+    background: nth($back-palette, 1);
+    h2 {
+        color: $title-text;
+    }
+}
+
+
+@mixin center($type: 'both') {
+    position: absolute;
+
+    @if $type == 'vertical' {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    @else if $type == 'right' {
+        top: 50%;
+        right: 0%;
+        transform: translateY(-50%);
+    }
+    @else if $type == 'horizontal' {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @else if $type == 'both' {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @else if $type == 'center' {
+        top: 0;
+        left: 0;
+    }
+}

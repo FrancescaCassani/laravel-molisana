@@ -1,0 +1,50 @@
+body {
+  font-family: "Nunito", sans-serif;
+  color: #333;
+  background: #f2f2f2;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 100vw;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 20px;
+  background: #f0f0e8;
+}
+.container h2 {
+  color: #346077;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.type-section {
+  margin-bottom: 60px;
+}
+.type-section .cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.type-section .cards .card {
+  flex-basis: 30%;
+  padding-left: 20px;
+  padding: 18px;
+}
+.type-section .cards .card img {
+  border-radius: 15px;
+  transition: transform 0.4s;
+}
+.type-section .cards .card img:hover {
+  transform: scale(1.07);
+}
+.type-section .cards .card a {
+  text-decoration: none;
+}
