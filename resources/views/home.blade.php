@@ -4,7 +4,7 @@
 
 
 @if (!empty($corte))
-<section class="type-section container">
+<section class="type-section container t-c">
     <h2>LE CORTE</h2>
 
     <div class="cards">
@@ -22,7 +22,7 @@
 
 
 @if (!empty($lunghe))
-<section class="type-section container">
+<section class="type-section container t-c">
     <h2>LE LUNGHE</h2>
 
     <div class="cards">
@@ -40,7 +40,7 @@
 
 
 @if (!empty($cortissime))
-<section class="type-section container">
+<section class="type-section container t-c">
     <h2>LE CORTISSIME</h2>
 
     <div class="cards">

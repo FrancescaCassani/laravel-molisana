@@ -1,10 +1,19 @@
 @extends('layouts.main')
 
 
-@section('content')
+@section('content-ricette')
 
-    <h1>LE RICETTE PIU' FAMOsE</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, ullam omnis repudiandae repellendus id incidunt autem provident neque magni sapiente cumque ducimus ab alias accusantium voluptatem, reiciendis similique eligendi nesciunt.</p>
+<section class="type-section container t-c">
+    <h2>LE RICETTE PIU' FAMOSE</h2>
+
+    <div class="cards">
+        @foreach ($ricette as $ricetta)
+            <div class="card">
+                <img src="{{ $ricetta['src'] }}" alt="">
+            </div>
+        @endforeach
+    </div>
+</section>
 
 @endsection
 

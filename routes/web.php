@@ -163,7 +163,7 @@ Route::get('/', function () {
     return view('home', [
     'lunghe' => $lunghe, 
     'corte' => $corte, 
-    'cortissime' => $cortissime
+    'cortissime' => $cortissime,
     ]); 
 });
 
@@ -174,15 +174,14 @@ Route::get('/ricette', function () {
     $data = [
         [
             'src' => 'https://www.lamolisana.it/wp-content/uploads/2017/06/box-ricetta-1.jpg',
+            'title' => 'Caserecce alla molisana'
         ],
         [
-            'src' => 'https://www.lamolisana.it/wp-content/uploads/2017/06/box-ricetta-2.jpg',
-        ],
-        [
-            'src' => 'https://www.lamolisana.it/wp-content/uploads/2017/06/box-ricetta-3.jpg',
+            'src' => 'https://www.lamolisana.it/wp-content/uploads/2017/06/box-ricetta-6.jpg',
+            'title' => 'Fusilli tonno e cipolla'
         ],
     ];
 
 
-    return view('ricette');
+    return view('ricette', ['ricette' => $data]);
 });

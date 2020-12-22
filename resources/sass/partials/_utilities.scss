@@ -10,6 +10,9 @@
     }
 }
 
+.t-c {
+    text-align: center;
+}
 
 @mixin center($type: 'both') {
     position: absolute;

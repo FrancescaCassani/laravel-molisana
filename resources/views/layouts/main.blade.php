@@ -8,6 +8,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     </head>
 
@@ -17,6 +18,7 @@
 
         <main>
             @yield('content')
+            @yield('content-ricette')
         </main>
 
         @include('partials.footer')
