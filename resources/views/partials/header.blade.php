@@ -12,5 +12,6 @@
     <div class="content">
         <a href="/">Home</a>
         <a href="{{ route('ricette') }} ">Le ricette</a>
+        <a href="{{ route('news') }} ">Novità</a>
     </div>
 </header>

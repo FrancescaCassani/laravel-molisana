@@ -85,3 +85,31 @@ Route::get('/ricette', function () {
 
     return view('ricette', ['ricette' => $data]);
 })->name('ricette');
+
+
+
+
+// LE NEWS
+Route::get('/news', function () {
+    
+    $data = [
+        [
+            'src' => 'https://www.lamolisana.it/wp-content/uploads/bfi_thumb/pranzo-poveri-m-ognt1fwyr0j9sg0u5ussfinxjoee7sltzgddwctwa4.jpg',
+            'title' => '5000 pacchetti di pasta a Roma per la giornata dei poveri',
+            'when' => '23/11/2020'
+        ],
+        [
+            'src' => 'https://www.lamolisana.it/wp-content/uploads/bfi_thumb/unitalsi-articolo-cover-oyu29ktnj3sx9wiygrqgbc237zov11w4moayal4fjg.jpg',
+            'title' => 'Nuovo automezzo donato all\'Unitalsi di Campobasso',
+            'when' => '23/11/2020'
+        ],
+        [
+            'src' => 'https://www.lamolisana.it/wp-content/uploads/bfi_thumb/primo-soccorso-m-owbf13zsondizhneix5ni41kai8unggjs5a23wnhkc.jpg',
+            'title' => 'Attività formative di primo soccorso in azienda',
+            'when' => '02/10/2020'
+        ],
+    ];
+
+
+    return view('news', ['news' => $data]);
+})->name('news');
