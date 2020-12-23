@@ -26,7 +26,7 @@ Route::get('/', function () {
     foreach ($data as $key => $card) {
 
         $card['id'] = $key; 
-        
+
         if($card['tipo'] == 'lunga') {
             $lunghe[] = $card;
         } 
@@ -42,11 +42,7 @@ Route::get('/', function () {
     //TOOL DI DEBUG
     //dd($data);
     
-    return view('home', [
-    'lunghe' => $lunghe, 
-    'corte' => $corte, 
-    'cortissime' => $cortissime,
-    ]); 
+    return view('home', compact('lunghe', 'corte', 'cortissime')); 
 });
 
 
@@ -55,7 +51,7 @@ Route::get('/', function () {
 
 Route::get('/product/{id}', function ($id) {
 
-    dump($id);
+    //dump($id);
 
     $data = config('site-data');
 
