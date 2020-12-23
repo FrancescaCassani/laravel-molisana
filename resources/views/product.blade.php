@@ -9,6 +9,16 @@
 <section class="product">
     <div class="container">
 
+        <div class="slider">
+            @if ($id > 0) 
+                <a href=" {{ route('product', $id - 1) }}">&lt; PREV</a>
+            @endif
+
+            @if ($id < $length) 
+                <a href=" {{ route('product', $id + 1) }}">NEXT &gt;</a>
+            @endif
+        </div>
+
         <div class="hero t-c">
             <h1> {{ $product['titolo'] }} </h1>
             <p> Tempo di cottura: {{ $product['cottura'] }}</p>

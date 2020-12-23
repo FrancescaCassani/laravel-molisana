@@ -8,7 +8,7 @@
 
     <div class="cards">
         @foreach ($news as $new)
-            <div class="card">
+            <div class="card news">
                 <img src="{{ $new['src'] }}" alt="">
                 <div class="wrapper">
                     <h5> {{ $new['when'] }} </h5>

@@ -81,8 +81,20 @@ img {
   margin: 0 auto;
   padding-bottom: 30px;
 }
+.product .slider {
+  display: flex;
+  justify-content: center;
+}
+.product .slider a {
+  padding: 20px 20px 0 0;
+  text-decoration: none;
+  color: #333;
+}
+.product .slider a:hover {
+  color: #346077;
+}
 
-.card {
+.card.news {
   position: relative;
   overflow: hidden;
   cursor: -webkit-grab;
@@ -90,10 +102,10 @@ img {
   transition: all 0.5s ease;
   filter: grayscale(100%);
 }
-.card:hover {
+.card.news:hover {
   filter: grayscale(0);
 }
-.card .wrapper {
+.card.news .wrapper {
   position: absolute;
   top: 0;
   left: 0;
@@ -101,11 +113,11 @@ img {
   height: 100%;
   opacity: 0;
 }
-.card .wrapper:hover, .card .wrapper:active {
+.card.news .wrapper:hover, .card.news .wrapper:active {
   opacity: 1;
   transition: all 0.4s ease;
 }
-.card .wrapper h4, .card .wrapper h5 {
+.card.news .wrapper h4, .card.news .wrapper h5 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -113,6 +125,6 @@ img {
   color: #fff;
   font-size: 22px;
 }
-.card .wrapper h5 {
+.card.news .wrapper h5 {
   padding-bottom: 60%;
 }

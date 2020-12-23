@@ -60,7 +60,9 @@ Route::get('/product/{id}', function ($id) {
 
     $product = $data[$id];
 
-return view('product', compact('product', 'id'));
+    $length = count($data) -  1;
+
+return view('product', compact('product', 'id', 'length'));
 })->name('product');
 
 
