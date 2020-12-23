@@ -30,6 +30,19 @@ img {
   margin: 20px 0;
 }
 
+.content {
+  display: flex;
+  justify-content: center;
+}
+.content a {
+  padding-right: 30px;
+  text-decoration: none;
+  color: #333;
+}
+.content a:hover, .content a:active {
+  color: #346077;
+}
+
 .type-section {
   margin-bottom: 60px;
 }
@@ -55,4 +68,51 @@ img {
 }
 .type-section .cards .card a {
   text-decoration: none;
+}
+
+.product .hero h1 {
+  padding-top: 25px;
+}
+.product .hero img {
+  display: block;
+}
+.product .hero .content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  cursor: -webkit-grab;
+  cursor: grab;
+  transition: all 0.5s ease;
+  filter: grayscale(100%);
+}
+.card:hover {
+  filter: grayscale(0);
+}
+.card .wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.card .wrapper:hover, .card .wrapper:active {
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+.card .wrapper h4, .card .wrapper h5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 22px;
+}
+.card .wrapper h5 {
+  padding-bottom: 60%;
 }

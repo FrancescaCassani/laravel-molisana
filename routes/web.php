@@ -71,17 +71,7 @@ return view('product', compact('product', 'id'));
 // LE RICETTE
 Route::get('/ricette', function () {
     
-    $data = [
-        [
-            'src' => 'https://www.lamolisana.it/wp-content/uploads/2017/06/box-ricetta-1-600x600.jpg',
-            'title' => 'Caserecce alla molisana'
-        ],
-        [
-            'src' => 'https://www.lamolisana.it/wp-content/uploads/2017/06/box-ricetta-5-600x600.jpg',
-            'title' => 'Fusilli tonno e cipolla'
-        ],
-    ];
-
+    $data = config('ricette-data');
 
     return view('ricette', ['ricette' => $data]);
 })->name('ricette');
@@ -92,24 +82,7 @@ Route::get('/ricette', function () {
 // LE NEWS
 Route::get('/news', function () {
     
-    $data = [
-        [
-            'src' => 'https://www.lamolisana.it/wp-content/uploads/bfi_thumb/pranzo-poveri-m-ognt1fwyr0j9sg0u5ussfinxjoee7sltzgddwctwa4.jpg',
-            'title' => '5000 pacchetti di pasta a Roma per la giornata dei poveri',
-            'when' => '23/11/2020'
-        ],
-        [
-            'src' => 'https://www.lamolisana.it/wp-content/uploads/bfi_thumb/unitalsi-articolo-cover-oyu29ktnj3sx9wiygrqgbc237zov11w4moayal4fjg.jpg',
-            'title' => 'Nuovo automezzo donato all\'Unitalsi di Campobasso',
-            'when' => '23/11/2020'
-        ],
-        [
-            'src' => 'https://www.lamolisana.it/wp-content/uploads/bfi_thumb/primo-soccorso-m-owbf13zsondizhneix5ni41kai8unggjs5a23wnhkc.jpg',
-            'title' => 'Attività formative di primo soccorso in azienda',
-            'when' => '02/10/2020'
-        ],
-    ];
-
+    $data = config('news-data');
 
     return view('news', ['news' => $data]);
 })->name('news');

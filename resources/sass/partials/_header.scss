@@ -3,3 +3,16 @@
     justify-content: center;
     margin: 20px 0;
 }
+.content {
+    display: flex;
+    justify-content: center;
+    a {
+        padding-right: 30px;
+        text-decoration: none;
+        color: $text-col;
+        &:hover, &:active {
+            color: $title-text;
+        }
+    }
+
+}
