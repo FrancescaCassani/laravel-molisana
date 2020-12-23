@@ -18,7 +18,6 @@
 
         <main>
             @yield('content')
-            @yield('content-ricette')
         </main>
 
         @include('partials.footer')

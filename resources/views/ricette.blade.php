@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 
-@section('content-ricette')
+@section('content')
 
 <section class="type-section container t-c">
     <h2>LE RICETTE PIU' FAMOSE</h2>

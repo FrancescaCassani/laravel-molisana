@@ -13,7 +13,7 @@
                 <img src="{{ $card['src'] }}" alt="{{ $card['titolo'] }}">
                 <h3> {{ $card['titolo'] }} </h3>
                 <h5> Tempo di cottura: {{ $card['cottura'] }}</h5>
-                <a href="#">Info prodotto</a>
+                <a href="{{ route('product', $card['id']) }}">Info prodotto</a>
             </div>
         @endforeach
     </div>
@@ -31,7 +31,7 @@
                 <img src="{{ $card['src'] }}" alt="{{ $card['titolo'] }}">
                 <h3> {{ $card['titolo'] }} </h3>
                 <h5> Tempo di cottura: {{ $card['cottura'] }}</h5>
-                <a href="#">Vedi prodotto</a>
+                {{-- <a href="{{ route('product', $card['id']) }}">Info prodotto</a> --}}
             </div>
         @endforeach
     </div>
@@ -49,8 +49,7 @@
                 <img src="{{ $card['src'] }}" alt="{{ $card['titolo'] }}">
                 <h3> {{ $card['titolo'] }} </h3>
                 <h5> Tempo di cottura: {{ $card['cottura'] }}</h5>
-                <a href="#">Info prodotto</a>
-                
+                {{-- <a href="{{ route('product', $card['id']) }}">Info prodotto</a> --}}
             </div>
         @endforeach
     </div>
