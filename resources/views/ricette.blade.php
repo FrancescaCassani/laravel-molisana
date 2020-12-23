@@ -18,6 +18,7 @@
 @endsection
 
 
+{{-- Posso eseguire script solo in sezioni di progetto --}}
 @section('scripts')
     
 @endsection

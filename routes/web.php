@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 // HOMEPAGE
 Route::get('/', function () {
 
+    //Riporto i dati che ho estrapolato dal file in config per rendere il tutto più fruibile
     $data = config('site-data');
 
     $lunghe = [];
@@ -25,6 +26,7 @@ Route::get('/', function () {
 
     foreach ($data as $key => $card) {
 
+        //Recupero la posizione dell'elemento nell'array con la chiave
         $card['id'] = $key; 
 
         if($card['tipo'] == 'lunga') {
@@ -53,14 +55,13 @@ Route::get('/product/{id}', function ($id) {
 
     //dump($id);
 
+    //Riporto i dati che ho estrapolato dal file in config per rendere il tutto più fruibile
     $data = config('site-data');
 
     $product = $data[$id];
 
 return view('product', compact('product', 'id'));
 })->name('product');
-
-
 
 
 
@@ -83,4 +84,4 @@ Route::get('/ricette', function () {
 
 
     return view('ricette', ['ricette' => $data]);
-});
+})->name('ricette');
