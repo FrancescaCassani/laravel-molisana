@@ -14,14 +14,18 @@
 
 
     <body>
-        @include('partials.header')
+        <div id="pasta">
+            @include('partials.header')
 
-        <main>
-            @yield('content')
-        </main>
+            <main>
+                @yield('content')
+            </main>
 
-        @include('partials.footer')
-  
-        @yield('scripts')
+            @include('partials.footer')
+    
+            @yield('scripts')
+
+        </div>
+    <script src="{{ asset('js/app.js')}}"></script>
     </body>
 </html>

@@ -14,5 +14,18 @@
             color: $title-text;
         }
     }
+}
+.only-mobile {
+    display: none;
+}
 
+
+@media screen and (max-width: 992px) {
+    .only-desktop {
+        display: none;
+    }
+    .only-mobile {
+        display: flex;
+        justify-content: center;
+    }
 }
